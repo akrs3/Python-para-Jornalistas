@@ -1,0 +1,28 @@
+ingredientes = 0
+resposta = str(input("Voce tem achocolatado? (s/n)"))
+if resposta == 's':
+    ingredientes = ingredientes + 1
+    resposta = str(input("Voce tem 1 caixa de leite condensado? (s/n)"))
+    
+    if resposta == 's':
+        ingredientes = ingredientes + 1
+        print("Separe uma panela para cozimento")
+        print("Abra a caixa de leite condensado e despeje na panela")
+        print("Coloque algumas colheres de sopa de Nescau na panela")
+        print("Mecha o leite condensado e o Nescau")
+        print("Acrescente 1/2 colher de sopa de margarina na panela")
+        print("Leve a panela ao fogo baixo e mexa")
+        resposta = str(input("O brigadeiro está soltando da panela? (s/n)"))
+        
+        if resposta == 's':
+            print("Desligue o fogo")
+            print("Espere esfriar um pouco e sirva-se.")
+        else: 
+            print("Continue mexendo até que o brigadeiro solte da panela.")
+            print("Desligue o fogo/n")
+            print("Espere esfriar um pouco e sirva-se.")
+    else:
+        print("Voce não pode fazer o brigadeiro ainda, pois precisa ir comprar o leite condensado.")
+
+else:
+    print("Voce não pode fazer o brigadeiro ainda, pois precisa ir comprar o achocolatado.")
