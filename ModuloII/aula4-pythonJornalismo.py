@@ -14,7 +14,7 @@ for registro in csv.DictReader(arquivo):
 
 #criando arquivo de saida
 arquivo_saida = open('estados.csv', mode='w', encoding='utf8')
-escritor = csv.writer(arquivo, lineterminator = '\n')
+escritor = csv.writer(arquivo_saida, lineterminator = '\n')
 escritor.writerow(['estado', 'habitantes'])
 for estado, habitantes in populacao.most_common():
     escritor.writerow([estado, habitantes])
