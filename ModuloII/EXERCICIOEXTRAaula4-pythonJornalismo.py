@@ -6,11 +6,11 @@ populacao = collections.Counter() #cria contador vazio
 area = collections.Counter() # criar contador vazio para area
 densidade = collections.Counter()
 
-#contafem a partir do CSV
+#contagem a partir do CSV
 #for registro in csv.DictReader(arquivo):
 #    populacao[registro['estado']] += int(registro['habitantes'])
 
-#contafem a partir do CSV
+#contagem a partir do CSV
 for registro in csv.DictReader(arquivo):
     area[registro['estado']] += float(registro['area'])
     populacao[registro['estado']] += int(registro['habitantes'])
